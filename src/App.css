@@ -1,0 +1,362 @@
+
+:root{
+  --DarkestBlue:#05061f;
+  --DarkBlue:#050628;
+  --lightBlueA:#37bde3;
+  --lightBlueB:#52a1fd;
+  --lightestBlue:#19c6bf;
+
+  --white:white;
+}
+/*! */
+/*? */
+/*// */
+/*todo */
+/* */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: url("./components/images/20230803172521_[fpdl.in]_stock-market-forex-trading-graph-candlestick-chart-suitable-financial-investment-concept_54178-2547_large.jpg"), rgba(0,0,0,0.5);
+  background-blend-mode: darken;
+  background-size:cover ;
+background-attachment: fixed;
+background-repeat: no-repeat;
+}
+
+.hero{
+  width: 100%;
+  height: 100vh;
+  /*todo background: url("./components/images/sl_022321_41020_18.png"),rgba(0,0,0,0.4);
+  background: url("./components/images/dylan-calluy-JpflvzEl5cg-unsplash.jpg");*/
+
+  height:100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.hero h1{
+  font-size: 5rem;
+  color: white;
+  font-family: 'Josefin sans';
+  text-align: center;
+}
+.hero span{
+  color: var(--lightestBlue);
+}
+.hero .btn{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+}
+.hero .btn button{
+  outline: none;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+}
+.start{
+  background-color: var(--lightestBlue);
+  border: none;
+  color: white;
+}
+.start:hover{
+  background-color: white;
+  color: #05061f;
+}
+.cont{
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+}
+.cont:hover{
+  background-color: var(--lightBlueA);
+  color: #05061f;
+  border: 2px solid #19c6bf;
+}
+nav{
+  height: 12vh;
+  width: 100%; 
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10rem;
+}
+
+.logo{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  font-family: 'Karla';
+  font-size: 1.5rem;
+}
+.logo img{
+  width: 5rem;
+}
+.navbar {
+  display: flex;
+  flex-direction:row;
+  justify-content: space-evenly;
+  gap: 2rem;
+  list-style-type: none;
+  font-family: "Montserrat";
+  font-weight: 600;
+  color: var(--white);
+}
+.navbar li:hover{
+  color: var(--lightestBlue);
+}
+.link{
+  color: white;
+  text-decoration: none;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+section{
+  width: 100%;
+  height: 100vh;
+}
+.about{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+  gap: 20px;
+}
+.about h2{
+  font-size: 3rem;
+  font-family: 'karla';
+  color: #05061f;
+  }
+.about p{
+  font-size: 1.3rem;
+  text-indent: 2rem;
+ color: hsl(216, 15%, 40%) ;
+  font-family: 'Montserrat';
+}
+.choose{
+  display: flex;
+  flex-direction:column;
+justify-content: center;
+align-items: center;
+gap: 2rem;
+  background:url("./components/images/20230804152151_[fpdl.in]_beautiful-cryptocurrwncy-concept_23-2149250205_medium.jpg"), rgba(0,0,0,0.5);
+  background-attachment: fixed;
+  background-blend-mode: darken;
+  background-position: center;
+  background-size: cover;
+  
+}
+.choose h2{
+  font-family: 'Josefin sans';
+  color: white;
+  font-size: 3rem;
+ 
+}
+.choose .cards{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-around;
+  gap: 20px;
+  width: 90%;
+}
+.choose .card{
+  display: flex;
+  background-color: white;
+flex-direction: column;
+align-items: center;
+gap: 20px;
+width: 15rem;
+
+
+}  
+.choose .card .icon{
+  width: 100%;
+  text-align: center;
+  background-color: #05061f;
+
+}
+.choose .card span{
+  font-size: 10rem;
+  color:var(--lightBlueA) ;
+}
+.choose .card h3{
+  color: var(--DarkBlue);
+  padding: 0px 20px;
+  font-family: 'Josefin Sans';
+  text-align: center;
+}
+.choose .card p{
+  color: hsl(216, 15%, 40%);
+
+font-family: 'Montserrat';
+padding: 0px 20px 10px 20px;
+}
+.offer{
+  display: flex;
+  flex-direction:column;
+  height: fit-content;
+justify-content: center;
+align-items: center;
+gap: 2rem;
+  background:url("./components/images/20230804152151_[fpdl.in]_beautiful-cryptocurrwncy-concept_23-2149250205_medium.jpg"), rgba(0,0,0,0.5);
+ /*background-color: white;*/
+  background-attachment: fixed;
+  background-blend-mode: darken;
+  background-position: center;
+  background-size: cover;
+  padding: 2rem;
+}
+.offer h2{
+  font-family: 'Josefin sans';
+  color: white;
+  font-size: 3rem;
+ 
+}
+.offer .cards{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+ 
+}
+.offer .card{
+  display: flex;
+  background-color: white;
+flex-direction: column;
+align-items: center;
+gap: 20px;
+width: 15rem;
+padding: 1.5rem;
+}  
+
+
+.offer .card h3{
+  color: var(--DarkBlue);
+  font-family: 'Josefin Sans';
+  text-align: center;
+}
+.offer .card p{
+  color: hsl(216, 15%, 40%);
+font-family: 'Montserrat';
+}
+.faqs{
+  padding: 3rem 0;
+  height: fit-content;
+  background-color: #05061f;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.faqs h2{
+  color: #19c6bf;
+  font-size: 4rem;
+  font-family: 'Josefin sans';
+}
+.faq{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+}
+.faq details{
+  border: 2px solid white;
+  padding: 20px;
+  display: flex;
+  border-radius: 9px;
+}
+.faq details[open]{
+  max-height: fit-content; /* Adjust the max-height to an appropriate value */
+  transition: max-height 5s ease-in; 
+
+}
+.faq summary{
+  color: white;
+  font-family: 'Karla';
+}
+.faq p{
+  color: #19c6bf;
+  text-indent: 3rem;
+  font-family: 'Montserrat';
+  margin-top: 1rem;
+  transition: max-height 5s ease-in;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url("./components/images/dylan-calluy-JpflvzEl5cg-unsplash.jpg"),rgba(0,0,0,0.5);
+  background-blend-mode: darken;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  justify-content: center;
+}
+.contact h2{
+  color: white;
+  font-family: 'Josefin Sans';
+  font-size: 4rem;
+}
+.contact form{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+}
+.contact form label{
+  color: white;
+  font-size: 1.4rem;
+  font-family: "Montserrat";
+}
+.contact form input{
+  font-family: "Montserrat"; 
+  width:25rem;
+  height: 4rem;
+  font-size: 1.2rem;
+            background-color: transparent;
+            color: white;
+            bottom: 0;
+            box-shadow: none;
+            border-left: none;
+            border-right: none;
+            border-top:none;
+            outline: none;
+            border-bottom: 2px solid white;
+}
+.contact form input::placeholder{
+  color:white;
+}
+.contact form input[type="submit"]{
+  border: 2px solid white;
+}
